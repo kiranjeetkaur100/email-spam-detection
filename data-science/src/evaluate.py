@@ -12,10 +12,10 @@ def main(args):
     model = joblib.load(args.model_input)
     
     # Make predictions on the test data
-    predictions = model.predict(test_data['Message'])
+    predictions = model.predict(test_data['text'])
     
     # Calculate accuracy
-    accuracy = accuracy_score(test_data['Spam'], predictions)
+    accuracy = accuracy_score(test_data['spam'], predictions)
     
     # Save the evaluation result
     os.makedirs(os.path.dirname(args.evaluation_output), exist_ok=True)

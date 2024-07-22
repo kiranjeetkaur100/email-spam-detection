@@ -17,7 +17,7 @@ def main(args):
     ])
     
     # Train the model
-    clf.fit(train_data['Message'], train_data['Spam'])
+    clf.fit(train_data['text'], train_data['spam'])
     
     # Save the trained model
     os.makedirs(os.path.dirname(args.model_output), exist_ok=True)

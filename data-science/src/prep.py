@@ -5,7 +5,7 @@ import os
 
 def main(args):
     data = pd.read_csv(args.raw_data)
-    data['Spam'] = data['Category'].apply(lambda x: 1 if x == 'spam' else 0)
+    data['spam'] = data['text'].apply(lambda x: 1 if x == 'spam' else 0)
     
     # Split the data into train, validation, and test sets
     train, val, test = np.split(data.sample(frac=1, random_state=42), [int(.7*len(data)), int(.85*len(data))])
