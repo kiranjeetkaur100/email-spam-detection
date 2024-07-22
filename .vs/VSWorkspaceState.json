@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\data",
+    "\\infrastructure",
+    "\\infrastructure\\modules",
+    "\\infrastructure\\modules\\data-explorer",
+    "\\infrastructure\\modules\\key-vault",
+    "\\mlops",
+    "\\mlops\\azureml",
+    "\\mlops\\azureml\\deploy",
+    "\\mlops\\azureml\\deploy\\batch"
   ],
-  "SelectedNode": "\\C:\\Users\\sacha\\OneDrive\\Desktop\\Assignments\\Intelligence\\kiran\\final-intelligence",
+  "SelectedNode": "\\.github\\workflows\\deploy-model-training-pipeline-classical.yml",
   "PreviewInSolutionExplorer": false
 }
