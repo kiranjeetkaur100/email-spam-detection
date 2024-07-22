@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - experimentation-email-spam
   workflow_dispatch:
 
 jobs:
